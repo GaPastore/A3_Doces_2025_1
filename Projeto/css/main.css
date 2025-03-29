@@ -2,10 +2,19 @@ body {
     margin: 0;
 }
 
-.vending-machine, .bt-a, .bt-b, .bt-c, .bt-1, .bt-2, .bt-5 {
+
+.vending-machine, .carnival, .bt-a, .bt-b, .bt-c, .bt-1, .bt-2, .bt-5 {
     position: fixed;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.carnival {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../images/parque.png");
+    filter: blur(10px) brightness(60%);
 }
 
 .vending-machine {
