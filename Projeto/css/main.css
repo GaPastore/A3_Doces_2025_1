@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+.vending-machine, .bt-a, .bt-b, .bt-c, .bt-1, .bt-2, .bt-5 {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.vending-machine {
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/vending machine.png");
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bt-a, .bt-b, .bt-c, .bt-1, .bt-2, .bt-5 {
+    height: 100px;
+    width: 100px;
+    left: 63.5%;
+    transition: all .3s ease-out;
+}
+
+
+.bt-a {
+    background-image: url("../images/bt a.png");
+    top: 10%;
+}
+
+.bt-b {
+    background-image: url("../images/bt b.png");
+    top: 23%;
+}
+
+.bt-c {
+    background-image: url("../images/bt c.png");
+    top: 36%;
+}
+
+.bt-1 {
+    background-image: url("../images/bt 1.png");
+    top: 50%;
+}
+
+.bt-2 {
+    background-image: url("../images/bt 2.png");
+    top: 63%;
+}
+
+.bt-5 {
+    background-image: url("../images/bt 5.png");
+    top: 76%;
+}
+
+.bt-a:hover, .bt-b:hover, .bt-c:hover, .bt-1:hover, .bt-2:hover, .bt-5:hover {
+    filter: brightness(140%);
+}
