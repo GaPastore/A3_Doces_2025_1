@@ -49,7 +49,6 @@ div {
 #bt-a, #bt-b, #bt-c, #bt-1, #bt-2, #bt-5, #bt-comprar {
     height: 7vh;
     width: 7vh;
-    left: 115vh;
     transition: filter .3s ease-out;
     background-size: contain;
 }
@@ -112,7 +111,6 @@ div {
     width: 14vh;
     height: 7vh;
     background-image: url("../images/bt comprar.png");
-    left: 111.9vh;
     top: 69vh;
     text-align: center;
     align-content: center;
@@ -125,7 +123,6 @@ div {
     background-color: #97dfe4;
     width: 20vh;
     height: 10vh;
-    left: 57%;
     top: 83vh;
     border-color: #82c5ca;
     border-width: 1rem;
@@ -140,7 +137,6 @@ div {
 #doce-a, #doce-b, #doce-c {
     height: 12vh;
     width: 24vh;
-    left: 65vh;
     background-size: contain;
     background-position: center;
 }
@@ -164,7 +160,6 @@ div {
 
 .r-um, .r-dois {
     background-size: contain;
-    left: 83vh;
     top: 84vh;
     opacity: 0;
     transition: opacity 2s ease-in-out;
@@ -210,5 +205,65 @@ div {
         top: 83vh;
         transform: translateX(-30%);
         opacity: 1;
+    }
+}
+
+/*--------------RESOLUÇÕES--------------*/
+
+
+@media screen and (max-width: 1920px) {
+    #bt-a, #bt-b, #bt-c, #bt-1, #bt-2, #bt-5, #bt-comprar {
+        left: 65vw;
+    }
+    #bt-comprar {
+        left: 63vw;
+    }
+    #painel {
+        left: 57vw;
+    }
+    .r-um, .r-dois {
+        left: 47vw;
+    }
+    #doce-a, #doce-b, #doce-c {
+        left: 37vw;
+    }
+}
+
+@media screen and (max-width: 1912px) {
+    #bt-a, #bt-b, #bt-c, #bt-1, #bt-2, #bt-5, #bt-comprar {
+        left: 61vw;
+    }
+    #bt-comprar {
+        left: 59vw;
+    }
+    #painel {
+        left: 53vw;
+    }
+    .r-um, .r-dois {
+        left: 45vw;
+    }
+    #doce-a, #doce-b, #doce-c {
+        left: 36vw;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #bt-a, #bt-b, #bt-c, #bt-1, #bt-2, #bt-5, #bt-comprar {
+        left: 65vw;
+    }
+    #bt-comprar {
+        left: 63vw;
+        font-size: medium;
+    }
+    #painel {
+        left: 57vw;
+        font-size: small;
+        border-width: .5rem;
+    }
+    .r-um, .r-dois {
+        left: 47vw;
+    }
+    #doce-a, #doce-b, #doce-c {
+        left: 37vw;
     }
 }
