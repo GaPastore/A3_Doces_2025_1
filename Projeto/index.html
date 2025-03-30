@@ -6,16 +6,29 @@
     <title>Projeto A3: Máquina de Doces</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel="icon" type="image/x-icon" href="/Projeto/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
     <script src='js/main.js'></script>
 </head>
-<body>
-    <div class="carnival"></div>
-    <div class="vending-machine"></div>
-    <div class="bt-a"></div>
-    <div class="bt-b"></div>
-    <div class="bt-c"></div>
-    <div class="bt-1"></div>
-    <div class="bt-2"></div>
-    <div class="bt-5"></div>
+<body onload="setText()">
+    <div id="reset" class="doto-900" onclick="resetGame()">REINICIAR JOGO</div>
+    <div id="carnival"></div>
+    <div id="vending-machine"></div>
+    <div id="bt-a" onclick="setDoce('A')"></div>
+    <div id="bt-b" onclick="setDoce('B')"></div>
+    <div id="bt-c" onclick="setDoce('C')"></div>
+    <div id="bt-1" onclick="addDinheiro('1')"></div>
+    <div id="bt-2" onclick="addDinheiro('2')"></div>
+    <div id="bt-5" onclick="addDinheiro('5')"></div>
+    <div id="doce-a"></div>
+    <div id="doce-b"></div>
+    <div id="doce-c"></div>
+    <div class="doto-900" id="bt-comprar" onclick="comprar()">COMPRAR</div>
+    <div class="doto-900" id="painel"></div>
+    <div class="r-um"></div>
+    <div class="r-dois"></div>
+    <div class="r-dois copy"></div>
 </body>
 </html>

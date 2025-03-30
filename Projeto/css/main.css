@@ -1,67 +1,210 @@
+/*--------------CONFIGURAÇÃO GERAL--------------*/
+
 body {
     margin: 0;
 }
 
-.vending-machine, .carnival, .bt-a, .bt-b, .bt-c, .bt-1, .bt-2, .bt-5 {
-    position: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
+.doto-900 {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "ROND" 0;
 }
 
-.carnival {
-    width: 100%;
-    height: 100%;
+div {
+    position: fixed;
+    background-repeat: no-repeat;
+}
+
+/*--------------PLANO DE FUNDO--------------*/
+
+#carnival {
+    width: 110%;
+    height: 110%;
+    left: -2%;
+    top: -2%;
     background-size: cover;
     background-image: url("../images/parque.png");
     filter: blur(10px) brightness(60%);
 }
 
-.vending-machine {
+/*--------------MÁQUINA DE DOCES--------------*/
+
+#vending-machine {
     width: 50%;
     height: 100%;
     background-image: url("../images/vending machine.png");
     left: 50%;
     transform: translateX(-50%);
+    background-size: contain;
 }
 
-.bt-a, .bt-b, .bt-c, .bt-1, .bt-2, .bt-5 {
-    height: 100px;
-    width: 100px;
-    left: 63.5%;
-    transition: all .3s ease-out;
+/*--------------BOTÕES--------------*/
+
+#bt-a, #bt-b, #bt-c, #bt-1, #bt-2, #bt-5, #bt-comprar {
+    height: 7vh;
+    width: 7vh;
+    left: 115vh;
+    transition: filter .3s ease-out;
+    background-size: contain;
 }
 
-
-.bt-a {
+#bt-a {
     background-image: url("../images/bt a.png");
-    top: 10%;
+    top: 6vh;
 }
 
-.bt-b {
+#bt-b {
     background-image: url("../images/bt b.png");
-    top: 23%;
+    top: 15vh;
 }
 
-.bt-c {
+#bt-c {
     background-image: url("../images/bt c.png");
-    top: 36%;
+    top: 24vh;
 }
 
-.bt-1 {
+#bt-1 {
     background-image: url("../images/bt 1.png");
-    top: 50%;
+    top: 42vh;
 }
 
-.bt-2 {
+#bt-2 {
     background-image: url("../images/bt 2.png");
-    top: 63%;
+    top: 51vh;
 }
 
-.bt-5 {
+#bt-5 {
     background-image: url("../images/bt 5.png");
-    top: 76%;
+    top: 60vh;
 }
 
-.bt-a:hover, .bt-b:hover, .bt-c:hover, .bt-1:hover, .bt-2:hover, .bt-5:hover {
+#reset {
+    width: 30vh;
+    transition: filter .3s ease-out;
+    height: 15vh;
+    margin: 2rem;
+    background-color: rgb(207, 106, 207);
+    border-radius: 2rem;
+    border-color: rgb(179, 60, 179);
+    border-width: 1vh;
+    border-style: outset;
+    text-align: center;
+    align-content: center;
+    font-size: xx-large;
+    z-index: 1;
+}
+
+#bt-a:hover, #bt-b:hover, #bt-c:hover, #bt-1:hover, #bt-2:hover, #bt-5:hover, #bt-comprar:hover, #reset:hover {
     filter: brightness(140%);
+}
+
+#bt-a:active, #bt-b:active, #bt-c:active, #bt-1:active, #bt-2:active, #bt-5:active, #bt-comprar:active, #reset:active{
+    filter: brightness(70%);
+}
+
+#bt-comprar {
+    width: 14vh;
+    height: 7vh;
+    background-image: url("../images/bt comprar.png");
+    left: 111.9vh;
+    top: 69vh;
+    text-align: center;
+    align-content: center;
+    font-size: x-large;
+}
+
+/*--------------PAINEL--------------*/
+
+#painel {
+    background-color: #97dfe4;
+    width: 20vh;
+    height: 10vh;
+    left: 57%;
+    top: 83vh;
+    border-color: #82c5ca;
+    border-width: 1rem;
+    border-style: solid;
+    text-align: center;
+    align-content: center;
+    font-size: large;
+}
+
+/*--------------DOCES--------------*/
+
+#doce-a, #doce-b, #doce-c {
+    height: 12vh;
+    width: 24vh;
+    left: 65vh;
+    background-size: contain;
+    background-position: center;
+}
+
+#doce-a {
+    background-image: url("../images/doce a.png");
+    top: 9vh;
+}
+
+#doce-b {
+    background-image: url("../images/doce b.png");
+    top: 31vh;
+}
+
+#doce-c {
+    background-image: url("../images/doce c.png");
+    top: 51vh;
+}
+
+/*--------------DINHEIROS--------------*/
+
+.r-um, .r-dois {
+    background-size: contain;
+    left: 83vh;
+    top: 84vh;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.copy {
+    transform: translateY(4vh);
+}
+
+.r-um {
+    width: 6vh;
+    height: 6vh;
+    background-image: url("../images/1 real.png");
+}
+
+.r-dois {
+    width: 12vh;
+    height: 6vh;
+    background-image: url("../images/2 reais.png");
+}
+
+.visible {
+    opacity: 1;
+}
+
+/*--------------ANIMAÇÃO DOS DOCES--------------*/
+
+.animation-doces {
+    animation: doces 3s forwards ease-in-out;
+}
+
+@keyframes doces {
+    20% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    80% {
+        top: 83vh;
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    100% {
+        top: 83vh;
+        transform: translateX(-30%);
+        opacity: 1;
+    }
 }
