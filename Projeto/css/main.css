@@ -1,5 +1,9 @@
 /*--------------CONFIGURAÇÃO GERAL--------------*/
 
+html {
+    cursor: url("../images/mouse.png") 1 1, pointer;
+}
+
 body {
     margin: 0;
 }

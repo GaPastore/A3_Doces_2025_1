@@ -146,6 +146,10 @@ function comprar() {
             }
             break;
 
+        default:
+            painel.innerHTML = "Selecione um produto!"
+            setTimeout(setText, 3000);
+
     }
 
 }
