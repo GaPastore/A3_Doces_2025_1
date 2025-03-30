@@ -2,7 +2,6 @@ body {
     margin: 0;
 }
 
-
 .vending-machine, .carnival, .bt-a, .bt-b, .bt-c, .bt-1, .bt-2, .bt-5 {
     position: fixed;
     background-repeat: no-repeat;
@@ -16,8 +15,6 @@ body {
     background-image: url("../images/parque.png");
     filter: blur(10px) brightness(60%);
 }
-
-
 
 .vending-machine {
     width: 50%;
