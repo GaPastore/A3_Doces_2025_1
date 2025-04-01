@@ -267,3 +267,42 @@ div {
         left: 37vw;
     }
 }
+
+@media screen and (max-width: 1358px) {
+    #bt-a, #bt-b, #bt-c, #bt-1, #bt-2, #bt-5, #bt-comprar {
+        left: 59vw;
+    }
+    #bt-comprar {
+        left: 57vw;
+    }
+    #painel {
+        left: 51vw;
+    }
+    .r-um, .r-dois {
+        left: 44vw;
+    }
+    #doce-a, #doce-b, #doce-c {
+        left: 35vw;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #bt-a, #bt-b, #bt-c, #bt-1, #bt-2, #bt-5, #bt-comprar {
+        left: 65vw;
+    }
+    #bt-comprar {
+        left: 63vw;
+        font-size: medium;
+    }
+    #painel {
+        left: 57vw;
+        font-size: small;
+        border-width: .5rem;
+    }
+    .r-um, .r-dois {
+        left: 47vw;
+    }
+    #doce-a, #doce-b, #doce-c {
+        left: 37vw;
+    }
+}
